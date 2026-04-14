@@ -45,224 +45,224 @@
         }
     </style>
 </head>
-<body class="bg-[#f8fafc] text-navy font-sans min-h-screen p-4 md:p-8">
+<body class="bg-[#f8fafc] text-navy font-sans min-h-screen p-2 md:p-4">
 
-    <div class="max-w-6xl mx-auto space-y-6">
+    <div class="max-w-5xl mx-auto space-y-4">
         
         <!-- Dashboard Header -->
-        <header class="bg-navy text-white rounded-2xl p-6 md:p-8 shadow-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-6 relative overflow-hidden">
+        <header class="bg-navy text-white rounded-xl p-4 md:p-5 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4 relative overflow-hidden">
             <!-- Background Decoration -->
-            <div class="absolute -right-10 -top-10 opacity-10">
-                <i data-lucide="layers" class="w-64 h-64"></i>
+            <div class="absolute -right-5 -top-5 opacity-10">
+                <i data-lucide="layers" class="w-40 h-40"></i>
             </div>
             
             <div class="relative z-10">
-                <div class="flex items-center gap-2 mb-2 text-teal">
-                    <i data-lucide="network" class="w-5 h-5"></i>
-                    <span class="text-sm font-bold uppercase tracking-wider">Learning Scaffold</span>
+                <div class="flex items-center gap-1.5 mb-1 text-teal">
+                    <i data-lucide="network" class="w-4 h-4"></i>
+                    <span class="text-xs font-bold uppercase tracking-wider">Learning Scaffold</span>
                 </div>
-                <h1 class="text-3xl font-bold mb-2">Pathway to Management</h1>
-                <p class="text-lightCyan max-w-xl text-sm leading-relaxed opacity-90">
+                <h1 class="text-2xl font-bold mb-1">Pathway to Management</h1>
+                <p class="text-lightCyan max-w-xl text-xs leading-relaxed opacity-90">
                     This pathway guides your transition from a technical expert and supervisor to a manager. Build your capability step-by-step, moving from managing daily operations to leading people and driving business strategy. You are currently in the <strong>Foundation Phase</strong>.
                 </p>
             </div>
 
-            <div class="relative z-10 bg-white/10 backdrop-blur-md p-5 rounded-xl border border-white/10 w-full md:w-auto text-center md:text-left min-w-[200px]">
-                <p class="text-xs uppercase tracking-wider text-lightCyan mb-2 font-semibold opacity-90">Overall Progress</p>
-                <div class="flex items-end gap-3 justify-center md:justify-start">
-                    <span class="text-4xl font-black text-teal" id="progress-text">0%</span>
+            <div class="relative z-10 bg-white/10 backdrop-blur-md p-3 rounded-lg border border-white/10 w-full md:w-auto text-center md:text-left min-w-[160px]">
+                <p class="text-[10px] uppercase tracking-wider text-lightCyan mb-1 font-semibold opacity-90">Overall Progress</p>
+                <div class="flex items-end gap-2 justify-center md:justify-start">
+                    <span class="text-3xl font-black text-teal" id="progress-text">0%</span>
                 </div>
-                <div class="w-full bg-white/20 rounded-full h-2 mt-3">
-                    <div id="progress-bar" class="bg-teal h-2 rounded-full transition-all duration-700" style="width: 0%"></div>
+                <div class="w-full bg-white/20 rounded-full h-1.5 mt-2">
+                    <div id="progress-bar" class="bg-teal h-1.5 rounded-full transition-all duration-700" style="width: 0%"></div>
                 </div>
             </div>
         </header>
 
         <!-- Main Content Area: Sidebar + Scaffolding Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
             
             <!-- Sidebar: The Learning Path -->
-            <nav class="lg:col-span-1 bg-white rounded-2xl p-5 shadow-sm border border-mediumCyan">
-                <h3 class="font-bold text-lg mb-6 border-b border-lightCyan pb-3 text-navy">Your Pathway</h3>
+            <nav class="lg:col-span-1 bg-white rounded-xl p-4 shadow-sm border border-mediumCyan">
+                <h3 class="font-bold text-base mb-4 border-b border-lightCyan pb-2 text-navy">Your Pathway</h3>
                 
-                <div class="space-y-0 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-lightCyan lg:before:ml-5 lg:before:-translate-x-px">
+                <div class="space-y-0 relative before:absolute before:inset-0 before:ml-4 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-lightCyan lg:before:ml-4 lg:before:-translate-x-px">
                     
                     <!-- Level 1 Nav -->
-                    <button onclick="switchTab(1)" class="relative flex items-start gap-4 w-full text-left group p-2 -ml-2 rounded-lg hover:bg-lightCyan/30 transition-colors z-10">
-                        <div id="nav-icon-1" class="w-10 h-10 rounded-full bg-teal text-white flex items-center justify-center flex-shrink-0 border-4 border-lightCyan shadow-sm transition-colors">
-                            <i data-lucide="book-open" class="w-4 h-4"></i>
+                    <button onclick="switchTab(1)" class="relative flex items-start gap-3 w-full text-left group p-1.5 -ml-1.5 rounded-lg hover:bg-lightCyan/30 transition-colors z-10">
+                        <div id="nav-icon-1" class="w-8 h-8 rounded-full bg-teal text-white flex items-center justify-center flex-shrink-0 border-[3px] border-lightCyan shadow-sm transition-colors">
+                            <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
                         </div>
-                        <div class="pt-2">
-                            <p id="nav-title-1" class="font-bold text-teal text-sm">Level 1: The Foundation</p>
-                            <p class="text-xs text-greyBlue mt-0.5">Managing yourself & the shift</p>
+                        <div class="pt-1.5">
+                            <p id="nav-title-1" class="font-bold text-teal text-xs">Level 1: The Foundation</p>
+                            <p class="text-[10px] text-greyBlue mt-0.5">Managing yourself & the shift</p>
                         </div>
                     </button>
 
-                    <div class="h-6"></div> <!-- Spacer -->
+                    <div class="h-4"></div> <!-- Spacer -->
 
                     <!-- Level 2 Nav -->
-                    <button onclick="switchTab(2)" id="nav-btn-2" class="relative flex items-start gap-4 w-full text-left group p-2 -ml-2 rounded-lg hover:bg-lightCyan/30 transition-colors z-10 opacity-70">
-                        <div id="nav-icon-2" class="w-10 h-10 rounded-full bg-gray-100 text-greyBlue flex items-center justify-center flex-shrink-0 border-4 border-white shadow-sm transition-colors">
-                            <i id="nav-lucide-2" data-lucide="lock" class="w-4 h-4"></i>
+                    <button onclick="switchTab(2)" id="nav-btn-2" class="relative flex items-start gap-3 w-full text-left group p-1.5 -ml-1.5 rounded-lg hover:bg-lightCyan/30 transition-colors z-10 opacity-70">
+                        <div id="nav-icon-2" class="w-8 h-8 rounded-full bg-gray-100 text-greyBlue flex items-center justify-center flex-shrink-0 border-[3px] border-white shadow-sm transition-colors">
+                            <i id="nav-lucide-2" data-lucide="lock" class="w-3.5 h-3.5"></i>
                         </div>
-                        <div class="pt-2">
-                            <p id="nav-title-2" class="font-bold text-greyBlue text-sm">Level 2: Leading People</p>
-                            <p class="text-xs text-greyBlue/80 mt-0.5">Delegation & team growth</p>
+                        <div class="pt-1.5">
+                            <p id="nav-title-2" class="font-bold text-greyBlue text-xs">Level 2: Leading People</p>
+                            <p class="text-[10px] text-greyBlue/80 mt-0.5">Delegation & team growth</p>
                         </div>
                     </button>
 
-                    <div class="h-6"></div> <!-- Spacer -->
+                    <div class="h-4"></div> <!-- Spacer -->
 
                     <!-- Level 3 Nav -->
-                    <button onclick="switchTab(3)" id="nav-btn-3" class="relative flex items-start gap-4 w-full text-left group p-2 -ml-2 rounded-lg hover:bg-lightCyan/30 transition-colors z-10 opacity-70 cursor-not-allowed">
-                        <div id="nav-icon-3" class="w-10 h-10 rounded-full bg-gray-100 text-greyBlue flex items-center justify-center flex-shrink-0 border-4 border-white shadow-sm transition-colors">
-                            <i id="nav-lucide-3" data-lucide="lock" class="w-4 h-4"></i>
+                    <button onclick="switchTab(3)" id="nav-btn-3" class="relative flex items-start gap-3 w-full text-left group p-1.5 -ml-1.5 rounded-lg hover:bg-lightCyan/30 transition-colors z-10 opacity-70 cursor-not-allowed">
+                        <div id="nav-icon-3" class="w-8 h-8 rounded-full bg-gray-100 text-greyBlue flex items-center justify-center flex-shrink-0 border-[3px] border-white shadow-sm transition-colors">
+                            <i id="nav-lucide-3" data-lucide="lock" class="w-3.5 h-3.5"></i>
                         </div>
-                        <div class="pt-2">
-                            <p id="nav-title-3" class="font-bold text-greyBlue text-sm">Level 3: Strategic Impact</p>
-                            <p class="text-xs text-greyBlue/80 mt-0.5">Business goals & strategy</p>
+                        <div class="pt-1.5">
+                            <p id="nav-title-3" class="font-bold text-greyBlue text-xs">Level 3: Strategic Impact</p>
+                            <p class="text-[10px] text-greyBlue/80 mt-0.5">Business goals & strategy</p>
                         </div>
                     </button>
                 </div>
             </nav>
 
             <!-- Scaffolding Content Area -->
-            <main class="lg:col-span-3 bg-white rounded-2xl shadow-sm border border-mediumCyan min-h-[500px]">
+            <main class="lg:col-span-3 bg-white rounded-xl shadow-sm border border-mediumCyan min-h-[380px] flex flex-col">
                 
                 <!-- LEVEL 1 CONTENT -->
-                <div id="content-1" class="fade-in">
-                    <div class="p-6 border-b border-lightCyan bg-lightCyan/30 rounded-t-2xl">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="bg-teal text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">Unlocked</span>
+                <div id="content-1" class="fade-in flex-grow">
+                    <div class="p-4 border-b border-lightCyan bg-lightCyan/30 rounded-t-xl">
+                        <div class="flex items-center gap-2 mb-1.5">
+                            <span class="bg-teal text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Unlocked</span>
                         </div>
-                        <h2 class="text-2xl font-bold text-navy">Level 1: The Foundation</h2>
-                        <p class="text-sm text-greyBlue mt-2">Before leading the broader team, you must shift your mindset from being a hands-on technical expert to managing yourself and daily operations. Complete these foundational activities to unlock the next level of leadership.</p>
+                        <h2 class="text-xl font-bold text-navy">Level 1: The Foundation</h2>
+                        <p class="text-xs text-greyBlue mt-1.5">Before leading the broader team, you must shift your mindset from being a hands-on technical expert to managing yourself and daily operations. Complete these foundational activities to unlock the next level of leadership.</p>
                     </div>
                     
-                    <div class="p-6 space-y-4">
+                    <div class="p-4 space-y-3">
                         <!-- Resource Item -->
-                        <div class="flex items-center justify-between p-4 rounded-xl border border-mediumCyan hover:border-teal transition-colors bg-white group">
-                            <div class="flex items-center gap-4">
-                                <div class="bg-lightCyan p-3 rounded-lg text-teal">
-                                    <i data-lucide="play-circle" class="w-6 h-6"></i>
+                        <div class="flex items-center justify-between p-3 rounded-lg border border-mediumCyan hover:border-teal transition-colors bg-white group">
+                            <div class="flex items-center gap-3">
+                                <div class="bg-lightCyan p-2 rounded-md text-teal">
+                                    <i data-lucide="play-circle" class="w-5 h-5"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-sm text-navy">Watch: From Technical Expert to Manager</h4>
-                                    <p class="text-xs text-greyBlue mt-1">A 4-minute video on navigating the shift from doing the work to leading the team.</p>
+                                    <h4 class="font-bold text-xs text-navy">Watch: From Technical Expert to Manager</h4>
+                                    <p class="text-[10px] text-greyBlue mt-0.5">A 4-minute video on navigating the shift from doing the work to leading the team.</p>
                                 </div>
                             </div>
-                            <button onclick="showToast('Launching video player: From Technical Expert to Manager...')" class="text-sm font-semibold text-teal hover:text-navy bg-lightCyan px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">View</button>
+                            <button onclick="showToast('Launching video player: From Technical Expert to Manager...')" class="text-xs font-semibold text-teal hover:text-navy bg-lightCyan px-3 py-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">View</button>
                         </div>
 
                         <!-- Resource Item -->
-                        <div class="flex items-center justify-between p-4 rounded-xl border border-mediumCyan hover:border-teal transition-colors bg-white group">
-                            <div class="flex items-center gap-4">
-                                <div class="bg-mediumCyan/50 p-3 rounded-lg text-navy">
-                                    <i data-lucide="mouse-pointer-click" class="w-6 h-6"></i>
+                        <div class="flex items-center justify-between p-3 rounded-lg border border-mediumCyan hover:border-teal transition-colors bg-white group">
+                            <div class="flex items-center gap-3">
+                                <div class="bg-mediumCyan/50 p-2 rounded-md text-navy">
+                                    <i data-lucide="mouse-pointer-click" class="w-5 h-5"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-sm text-navy">Do: The 'Eisenhower Matrix' Sandbox</h4>
-                                    <p class="text-xs text-greyBlue mt-1">Interactive activity to practice prioritising urgent vs. important tasks.</p>
+                                    <h4 class="font-bold text-xs text-navy">Do: The 'Eisenhower Matrix' Sandbox</h4>
+                                    <p class="text-[10px] text-greyBlue mt-0.5">Interactive activity to practice prioritising urgent vs. important tasks.</p>
                                 </div>
                             </div>
-                            <button onclick="showToast('Loading interactive sandbox environment...')" class="text-sm font-semibold text-teal hover:text-navy bg-lightCyan px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">Start</button>
+                            <button onclick="showToast('Loading interactive sandbox environment...')" class="text-xs font-semibold text-teal hover:text-navy bg-lightCyan px-3 py-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">Start</button>
                         </div>
 
                         <!-- Completion Action -->
-                        <div class="mt-8 pt-6 border-t border-lightCyan flex flex-col items-center justify-center text-center">
-                            <p class="text-sm mb-4 text-greyBlue">Have you completed all Level 1 materials?</p>
-                            <button id="btn-complete-1" onclick="completeLevel(1)" class="bg-navy hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-xl flex items-center gap-2 transition-transform transform active:scale-95 shadow-md">
-                                <i data-lucide="check-circle" class="w-5 h-5"></i>
+                        <div class="mt-5 pt-4 border-t border-lightCyan flex flex-col items-center justify-center text-center">
+                            <p class="text-xs mb-3 text-greyBlue">Have you completed all Level 1 materials?</p>
+                            <button id="btn-complete-1" onclick="completeLevel(1)" class="bg-navy hover:bg-opacity-90 text-white font-bold py-2 px-6 rounded-lg text-sm flex items-center gap-2 transition-transform transform active:scale-95 shadow-sm">
+                                <i data-lucide="check-circle" class="w-4 h-4"></i>
                                 Mark Level 1 Complete
                             </button>
-                            <p id="msg-complete-1" class="hidden text-teal font-bold text-sm mt-4 flex items-center gap-1">
-                                <i data-lucide="check" class="w-4 h-4"></i> Level 1 Completed. Level 2 is now unlocked!
+                            <p id="msg-complete-1" class="hidden text-teal font-bold text-xs mt-3 flex items-center gap-1">
+                                <i data-lucide="check" class="w-3.5 h-3.5"></i> Level 1 Completed. Level 2 is now unlocked!
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- LEVEL 2 CONTENT (Initially Locked) -->
-                <div id="content-2" class="hidden fade-in relative h-full">
+                <div id="content-2" class="hidden fade-in relative h-full flex-grow">
                     
                     <!-- Locked State Overlay -->
-                    <div id="locked-overlay-2" class="absolute inset-0 z-20 flex flex-col items-center justify-center p-8 text-center bg-white/80 backdrop-blur-sm rounded-b-2xl locked-overlay">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg max-w-sm border border-lightCyan">
-                            <div class="w-16 h-16 bg-lightCyan text-greyBlue rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i data-lucide="lock" class="w-8 h-8"></i>
+                    <div id="locked-overlay-2" class="absolute inset-0 z-20 flex flex-col items-center justify-center p-6 text-center bg-white/80 backdrop-blur-sm rounded-b-xl locked-overlay">
+                        <div class="bg-white p-5 rounded-xl shadow-md max-w-xs border border-lightCyan">
+                            <div class="w-12 h-12 bg-lightCyan text-greyBlue rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-lucide="lock" class="w-6 h-6"></i>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 text-navy">Level 2 is Locked</h3>
-                            <p class="text-sm text-greyBlue">The scaffolding requires you to master managing yourself first. Please complete Level 1 to access team leadership training.</p>
-                            <button onclick="switchTab(1)" class="mt-6 text-sm font-semibold text-teal hover:underline">Return to Level 1</button>
+                            <h3 class="text-lg font-bold mb-1.5 text-navy">Level 2 is Locked</h3>
+                            <p class="text-xs text-greyBlue">The scaffolding requires you to master managing yourself first. Please complete Level 1 to access team leadership training.</p>
+                            <button onclick="switchTab(1)" class="mt-4 text-xs font-semibold text-teal hover:underline">Return to Level 1</button>
                         </div>
                     </div>
 
                     <!-- Actual Content (Visible when unlocked) -->
-                    <div class="p-6 border-b border-lightCyan bg-lightCyan/30 rounded-t-2xl">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="bg-mediumCyan text-navy text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">Intermediate</span>
+                    <div class="p-4 border-b border-lightCyan bg-lightCyan/30 rounded-t-xl">
+                        <div class="flex items-center gap-2 mb-1.5">
+                            <span class="bg-mediumCyan text-navy text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Intermediate</span>
                         </div>
-                        <h2 class="text-2xl font-bold text-navy">Level 2: Leading People</h2>
-                        <p class="text-sm text-greyBlue mt-2">Now that your personal workflow is solid, we shift focus to your team. Here you will practice crucial conversations and delegation.</p>
+                        <h2 class="text-xl font-bold text-navy">Level 2: Leading People</h2>
+                        <p class="text-xs text-greyBlue mt-1.5">Now that your personal workflow is solid, we shift focus to your team. Here you will practice crucial conversations and delegation.</p>
                     </div>
                     
-                    <div class="p-6 space-y-4">
-                        <div class="flex items-start gap-4 p-4 rounded-xl border border-mediumCyan bg-white">
-                            <div class="bg-lightCyan p-3 rounded-lg text-navy flex-shrink-0">
-                                <i data-lucide="users" class="w-6 h-6"></i>
+                    <div class="p-4 space-y-3">
+                        <div class="flex items-start gap-3 p-3 rounded-lg border border-mediumCyan bg-white">
+                            <div class="bg-lightCyan p-2 rounded-md text-navy flex-shrink-0">
+                                <i data-lucide="users" class="w-5 h-5"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-sm text-navy">Scenario: The Performance Conversation</h4>
-                                <p class="text-xs text-greyBlue mt-1 mb-3">Read the team member brief, then use the simulated environment to practice providing constructive feedback without taking over the task.</p>
-                                <button onclick="showToast('Opening Team Member Brief PDF...')" class="text-xs font-bold text-navy border border-mediumCyan hover:bg-lightCyan px-3 py-1.5 rounded-lg transition-colors">Open Team Member Brief</button>
+                                <h4 class="font-bold text-xs text-navy">Scenario: The Performance Conversation</h4>
+                                <p class="text-[10px] text-greyBlue mt-0.5 mb-2">Read the team member brief, then use the simulated environment to practice providing constructive feedback without taking over the task.</p>
+                                <button onclick="showToast('Opening Team Member Brief PDF...')" class="text-[10px] font-bold text-navy border border-mediumCyan hover:bg-lightCyan px-2.5 py-1 rounded-md transition-colors">Open Team Member Brief</button>
                             </div>
                         </div>
 
                         <!-- Completion Action -->
-                        <div class="mt-8 pt-6 border-t border-lightCyan flex flex-col items-center justify-center text-center">
-                            <button id="btn-complete-2" onclick="completeLevel(2)" class="bg-navy hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-xl flex items-center gap-2 transition-transform transform active:scale-95 shadow-md">
-                                <i data-lucide="check-circle" class="w-5 h-5"></i>
+                        <div class="mt-5 pt-4 border-t border-lightCyan flex flex-col items-center justify-center text-center">
+                            <button id="btn-complete-2" onclick="completeLevel(2)" class="bg-navy hover:bg-opacity-90 text-white font-bold py-2 px-6 rounded-lg text-sm flex items-center gap-2 transition-transform transform active:scale-95 shadow-sm">
+                                <i data-lucide="check-circle" class="w-4 h-4"></i>
                                 Mark Level 2 Complete
                             </button>
-                            <p id="msg-complete-2" class="hidden text-teal font-bold text-sm mt-4 flex items-center gap-1">
-                                <i data-lucide="check" class="w-4 h-4"></i> Level 2 Completed. Level 3 is now unlocked!
+                            <p id="msg-complete-2" class="hidden text-teal font-bold text-xs mt-3 flex items-center gap-1">
+                                <i data-lucide="check" class="w-3.5 h-3.5"></i> Level 2 Completed. Level 3 is now unlocked!
                             </p>
                         </div>
                     </div>
                 </div>
 
                  <!-- LEVEL 3 CONTENT (Initially Locked) -->
-                 <div id="content-3" class="hidden fade-in relative h-full">
+                 <div id="content-3" class="hidden fade-in relative h-full flex-grow">
                     
                     <!-- Locked State Overlay -->
-                    <div id="locked-overlay-3" class="absolute inset-0 z-20 flex flex-col items-center justify-center p-8 text-center bg-white/80 backdrop-blur-sm rounded-b-2xl locked-overlay">
-                        <div class="bg-white p-6 rounded-2xl shadow-lg max-w-sm border border-lightCyan">
-                            <div class="w-16 h-16 bg-lightCyan text-greyBlue rounded-full flex items-center justify-center mx-auto mb-4">
-                                <i data-lucide="lock" class="w-8 h-8"></i>
+                    <div id="locked-overlay-3" class="absolute inset-0 z-20 flex flex-col items-center justify-center p-6 text-center bg-white/80 backdrop-blur-sm rounded-b-xl locked-overlay">
+                        <div class="bg-white p-5 rounded-xl shadow-md max-w-xs border border-lightCyan">
+                            <div class="w-12 h-12 bg-lightCyan text-greyBlue rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i data-lucide="lock" class="w-6 h-6"></i>
                             </div>
-                            <h3 class="text-xl font-bold mb-2 text-navy">Level 3 is Locked</h3>
-                            <p class="text-sm text-greyBlue">Strategic management requires a strong foundation in personal workflow and team leadership. Complete Levels 1 and 2 to unlock.</p>
+                            <h3 class="text-lg font-bold mb-1.5 text-navy">Level 3 is Locked</h3>
+                            <p class="text-xs text-greyBlue">Strategic management requires a strong foundation in personal workflow and team leadership. Complete Levels 1 and 2 to unlock.</p>
                         </div>
                     </div>
 
                     <!-- Actual Content -->
-                    <div class="p-6 border-b border-lightCyan bg-lightCyan/30 rounded-t-2xl">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="bg-navy text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">Advanced</span>
+                    <div class="p-4 border-b border-lightCyan bg-lightCyan/30 rounded-t-xl">
+                        <div class="flex items-center gap-2 mb-1.5">
+                            <span class="bg-navy text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Advanced</span>
                         </div>
-                        <h2 class="text-2xl font-bold text-navy">Level 3: Strategic Impact</h2>
-                        <p class="text-sm text-greyBlue mt-2">The scaffolding is now fully removed. You will apply your leadership skills to broader business objectives and strategic planning.</p>
+                        <h2 class="text-xl font-bold text-navy">Level 3: Strategic Impact</h2>
+                        <p class="text-xs text-greyBlue mt-1.5">The scaffolding is now fully removed. You will apply your leadership skills to broader business objectives and strategic planning.</p>
                     </div>
                     
-                    <div class="p-6 space-y-4">
-                        <div class="flex items-center justify-center p-12 rounded-xl border-2 border-dashed border-mediumCyan bg-lightCyan/20 text-center">
+                    <div class="p-4 space-y-3">
+                        <div class="flex items-center justify-center p-8 rounded-lg border-2 border-dashed border-mediumCyan bg-lightCyan/20 text-center">
                             <div>
-                                <div class="bg-teal/20 text-teal p-4 rounded-full inline-block mb-4">
-                                    <i data-lucide="award" class="w-10 h-10"></i>
+                                <div class="bg-teal/20 text-teal p-3 rounded-full inline-block mb-3">
+                                    <i data-lucide="award" class="w-8 h-8"></i>
                                 </div>
-                                <h4 class="font-bold text-lg text-navy">Final Capstone Project</h4>
-                                <p class="text-sm text-greyBlue mt-2 max-w-md mx-auto">Develop a 90-day capability uplift plan for your team and present it to senior leadership for review.</p>
-                                <button onclick="startCapstone()" id="btn-complete-3" class="mt-6 bg-teal hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-xl transition-colors shadow-sm">Start Capstone</button>
+                                <h4 class="font-bold text-base text-navy">Final Capstone Project</h4>
+                                <p class="text-xs text-greyBlue mt-1.5 max-w-sm mx-auto">Develop a 90-day capability uplift plan for your team and present it to senior leadership for review.</p>
+                                <button onclick="startCapstone()" id="btn-complete-3" class="mt-4 bg-teal hover:bg-opacity-90 text-white font-bold py-2 px-6 text-sm rounded-lg transition-colors shadow-sm">Start Capstone</button>
                             </div>
                         </div>
                     </div>
@@ -273,9 +273,9 @@
     </div>
 
     <!-- Toast Notification -->
-    <div id="toast" class="fixed bottom-6 right-6 bg-navy text-white px-6 py-4 rounded-xl shadow-2xl transform translate-y-24 opacity-0 transition-all duration-300 z-50 flex items-center gap-3">
-        <i data-lucide="info" class="w-5 h-5 text-teal"></i>
-        <span id="toast-message" class="text-sm font-medium">Message</span>
+    <div id="toast" class="fixed bottom-4 right-4 bg-navy text-white px-5 py-3 rounded-lg shadow-xl transform translate-y-24 opacity-0 transition-all duration-300 z-50 flex items-center gap-3">
+        <i data-lucide="info" class="w-4 h-4 text-teal"></i>
+        <span id="toast-message" class="text-xs font-medium">Message</span>
     </div>
 
     <!-- Interactive Logic -->
@@ -307,8 +307,8 @@
                 const titleP = document.getElementById(`nav-title-${i}`);
                 
                 if(state[i].unlocked) {
-                    iconDiv.className = "w-10 h-10 rounded-full bg-white text-greyBlue flex items-center justify-center flex-shrink-0 border-4 border-mediumCyan shadow-sm transition-colors";
-                    titleP.className = "font-bold text-navy text-sm";
+                    iconDiv.className = "w-8 h-8 rounded-full bg-white text-greyBlue flex items-center justify-center flex-shrink-0 border-[3px] border-mediumCyan shadow-sm transition-colors";
+                    titleP.className = "font-bold text-navy text-xs";
                 }
             }
 
@@ -317,11 +317,11 @@
             const activeTitleP = document.getElementById(`nav-title-${level}`);
             
             if(state[level].unlocked) {
-                activeIconDiv.className = "w-10 h-10 rounded-full bg-teal text-white flex items-center justify-center flex-shrink-0 border-4 border-lightCyan shadow-sm transition-colors";
-                activeTitleP.className = "font-bold text-teal text-sm";
+                activeIconDiv.className = "w-8 h-8 rounded-full bg-teal text-white flex items-center justify-center flex-shrink-0 border-[3px] border-lightCyan shadow-sm transition-colors";
+                activeTitleP.className = "font-bold text-teal text-xs";
             } else {
                  // Even if locked, if they click it, show it's selected but keep the locked look
-                 activeIconDiv.className = "w-10 h-10 rounded-full bg-gray-100 text-greyBlue flex items-center justify-center flex-shrink-0 border-4 border-white shadow-sm transition-colors";
+                 activeIconDiv.className = "w-8 h-8 rounded-full bg-gray-100 text-greyBlue flex items-center justify-center flex-shrink-0 border-[3px] border-white shadow-sm transition-colors";
             }
         }
 
@@ -337,7 +337,7 @@
 
             // Update icon in sidebar to a checkmark
             const iconDiv = document.getElementById(`nav-icon-${level}`);
-            iconDiv.innerHTML = '<i data-lucide="check" class="w-5 h-5"></i>';
+            iconDiv.innerHTML = '<i data-lucide="check" class="w-4 h-4"></i>';
             iconDiv.classList.add('bg-teal', 'text-white', 'border-mediumCyan');
             iconDiv.classList.remove('bg-white', 'text-greyBlue', 'border-lightCyan');
 
@@ -352,7 +352,7 @@
                 
                 // Change Lock icon to Unlock/Book icon
                 const nextIconDiv = document.getElementById(`nav-icon-${nextLevel}`);
-                nextIconDiv.innerHTML = `<i data-lucide="unlock" class="w-4 h-4"></i>`;
+                nextIconDiv.innerHTML = `<i data-lucide="unlock" class="w-3.5 h-3.5"></i>`;
                 
                 // Remove overlay in the content area
                 document.getElementById(`locked-overlay-${nextLevel}`).classList.add('hidden');
@@ -384,7 +384,7 @@
             document.getElementById('progress-bar').style.width = `${percentage}%`;
             
             if(percentage === 100) {
-                document.getElementById('progress-text').innerHTML = `100% <i data-lucide="award" class="inline w-6 h-6 text-teal mb-1"></i>`;
+                document.getElementById('progress-text').innerHTML = `100% <i data-lucide="award" class="inline w-5 h-5 text-teal mb-1"></i>`;
                 lucide.createIcons();
             }
         }
